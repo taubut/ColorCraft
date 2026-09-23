@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 (2026-09-23)
+
+- US spelling in the addon list tooltip (colors, gray).
+
 ## 1.0.0 (2026-09-23)
 
 - First release. Recipe names in the professions window are colored by skill-up chance: orange,
