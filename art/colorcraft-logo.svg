@@ -40,7 +40,7 @@
     <rect x="178" y="276" width="232" height="44" rx="22" fill="#40d040"/>
     <path d="M98 306 L118 290 L138 306" fill="none" stroke="#40d040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- grey: trivial -->
+  <!-- gray: trivial -->
   <g>
     <rect x="178" y="362" width="190" height="44" rx="22" fill="#8c8c8c"/>
     <circle cx="118" cy="384" r="9" fill="#8c8c8c"/>

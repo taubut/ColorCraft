@@ -1,10 +1,10 @@
--- ColorCraft: colour each recipe name in the professions window by its
+-- ColorCraft: color each recipe name in the professions window by its
 -- skill-up chance, like the classic trade skill window did.
 --   orange  = always a skill-up        (Optimal)
 --   yellow  = usually a skill-up        (Medium)
 --   green   = sometimes a skill-up      (Easy)
---   grey    = no skill-up any more      (Trivial)
--- Blizzard's recipe row sets its name colour in Init (when the row is built)
+--   gray    = no skill-up anymore      (Trivial)
+-- Blizzard's recipe row sets its name color in Init (when the row is built)
 -- and OnLeave (after the mouse-over highlight). ColorCraft repaints the name
 -- right after both, through secure hooks, so nothing of Blizzard's is replaced.
 -- No settings, no saved variables.
@@ -47,7 +47,7 @@ local function paint(row, node)
 		info = Professions.GetHighestLearnedRecipe(info) or info
 	end
 	if not info.learned or info.disabled or not listHasSkillUps() then return end
-	-- a learned recipe that can no longer raise the skill is grey, as in classic
+	-- a learned recipe that can no longer raise the skill is gray, as in classic
 	local color = info.canSkillUp and COLORS[info.relativeDifficulty] or COLORS[3]
 	if not color then return end
 	local r, g, b = color:GetRGB()

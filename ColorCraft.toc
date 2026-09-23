@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Title: ColorCraft
-## Notes: Colours recipe names in the professions window by skill-up chance, the classic way: orange, yellow, green, grey.
+## Notes: Colors recipe names in the professions window by skill-up chance, the classic way: orange, yellow, green, gray.
 ## Author: taubut
 ## Version: 1.0.0
 ## IconTexture: Interface\Icons\Trade_BlackSmithing
