@@ -4,5 +4,7 @@
 ## Author: taubut
 ## Version: 1.0.0
 ## IconTexture: Interface\Icons\Trade_BlackSmithing
+## X-License: MIT
+## X-Website: https://github.com/taubut/ColorCraft
 
 ColorCraft.lua
