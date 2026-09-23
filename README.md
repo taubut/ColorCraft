@@ -1,4 +1,4 @@
-<img src="art/logo.png" width="128" align="right" alt="ColorCraft logo">
+<img src="art/colorcraft-logo.png" width="128" align="right" alt="ColorCraft logo">
 
 # ColorCraft
 
