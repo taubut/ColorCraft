@@ -19,24 +19,26 @@
   <rect x="8" y="8" width="496" height="496" rx="96" fill="none" stroke="url(#rim)" stroke-opacity="0.8" stroke-width="7"/>
 
   <!-- four recipe rows: glow, bar, skill-up chevrons -->
-  <!-- orange: optimal (double chevron) -->
+  <!-- orange: optimal (three chevrons) -->
   <g>
     <rect x="178" y="104" width="250" height="44" rx="22" fill="#ff8040" opacity="0.55" filter="url(#glow)"/>
     <rect x="178" y="104" width="250" height="44" rx="22" fill="#ff8040"/>
-    <path d="M92 138 L118 112 L144 138" fill="none" stroke="#ff8040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M92 158 L118 132 L144 158" fill="none" stroke="#ff8040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+    <path d="M98 115 L118 99 L138 115" fill="none" stroke="#ff8040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 134 L118 118 L138 134" fill="none" stroke="#ff8040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 153 L118 137 L138 153" fill="none" stroke="#ff8040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- yellow: medium -->
+  <!-- yellow: medium (two) -->
   <g>
     <rect x="178" y="190" width="210" height="44" rx="22" fill="#ffe040" opacity="0.5" filter="url(#glow)"/>
     <rect x="178" y="190" width="210" height="44" rx="22" fill="#ffe040"/>
-    <path d="M92 229 L118 203 L144 229" fill="none" stroke="#ffe040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 210 L118 194 L138 210" fill="none" stroke="#ffe040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 230 L118 214 L138 230" fill="none" stroke="#ffe040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <!-- green: easy -->
+  <!-- green: easy (one) -->
   <g>
     <rect x="178" y="276" width="232" height="44" rx="22" fill="#40d040" opacity="0.5" filter="url(#glow)"/>
     <rect x="178" y="276" width="232" height="44" rx="22" fill="#40d040"/>
-    <path d="M98 311 L118 291 L138 311" fill="none" stroke="#40d040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 306 L118 290 L138 306" fill="none" stroke="#40d040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <!-- grey: trivial -->
   <g>
