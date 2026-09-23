@@ -2,6 +2,8 @@
 
 # ColorCraft
 
+[![Discord](https://img.shields.io/discord/1552365678751653928?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/eCtNeBqE8U)
+
 Classic recipe colors for the **WoW: Forever** professions window. Every recipe name is colored by
 how likely it is to raise your skill, the way the old trade skill window did, so you can see at a
 glance what to craft next.
@@ -26,6 +28,10 @@ No settings, no slash commands, no saved variables. Install it and open a profes
 Each recipe row in Blizzard's professions list sets its name color when the row is built and when
 the mouse leaves it. ColorCraft repaints the name right after both, through secure hooks, so
 nothing of Blizzard's is replaced and the Craft button is never touched.
+
+## Help and feedback
+
+Questions, bugs and ideas: the [ShamanPower Discord](https://discord.gg/eCtNeBqE8U) has a channel for every addon.
 
 ## License
 
