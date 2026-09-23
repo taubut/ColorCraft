@@ -1,3 +1,5 @@
+<img src="art/logo.png" width="128" align="right" alt="ColorCraft logo">
+
 # ColorCraft
 
 Classic recipe colours for the **WoW: Forever** professions window. Every recipe name is coloured by

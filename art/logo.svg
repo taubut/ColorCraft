@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#2a2118"/>
+      <stop offset="0.6" stop-color="#16110c"/>
+      <stop offset="1" stop-color="#0a0806"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8b54a"/>
+      <stop offset="1" stop-color="#8a5a1c"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <!-- tile -->
+  <rect x="8" y="8" width="496" height="496" rx="96" fill="url(#bg)"/>
+  <rect x="8" y="8" width="496" height="496" rx="96" fill="none" stroke="url(#rim)" stroke-opacity="0.8" stroke-width="7"/>
+
+  <!-- four recipe rows: glow, bar, skill-up chevrons -->
+  <!-- orange: optimal (double chevron) -->
+  <g>
+    <rect x="178" y="104" width="250" height="44" rx="22" fill="#ff8040" opacity="0.55" filter="url(#glow)"/>
+    <rect x="178" y="104" width="250" height="44" rx="22" fill="#ff8040"/>
+    <path d="M92 138 L118 112 L144 138" fill="none" stroke="#ff8040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M92 158 L118 132 L144 158" fill="none" stroke="#ff8040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  </g>
+  <!-- yellow: medium -->
+  <g>
+    <rect x="178" y="190" width="210" height="44" rx="22" fill="#ffe040" opacity="0.5" filter="url(#glow)"/>
+    <rect x="178" y="190" width="210" height="44" rx="22" fill="#ffe040"/>
+    <path d="M92 229 L118 203 L144 229" fill="none" stroke="#ffe040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- green: easy -->
+  <g>
+    <rect x="178" y="276" width="232" height="44" rx="22" fill="#40d040" opacity="0.5" filter="url(#glow)"/>
+    <rect x="178" y="276" width="232" height="44" rx="22" fill="#40d040"/>
+    <path d="M98 311 L118 291 L138 311" fill="none" stroke="#40d040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- grey: trivial -->
+  <g>
+    <rect x="178" y="362" width="190" height="44" rx="22" fill="#8c8c8c"/>
+    <circle cx="118" cy="384" r="9" fill="#8c8c8c"/>
+  </g>
+</svg>
