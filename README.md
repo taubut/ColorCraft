@@ -8,7 +8,7 @@ Classic recipe colors for the **WoW: Forever** professions window. Every recipe 
 how likely it is to raise your skill, the way the old trade skill window did, so you can see at a
 glance what to craft next.
 
-![The First Aid window with ColorCraft: orange, green and gray recipe names](screenshot.png)
+![The First Aid window with ColorCraft: orange, green and gray recipe names, the selected recipe highlighted in its green](screenshot.png)
 
 | Color | Meaning |
 |---|---|
