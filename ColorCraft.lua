@@ -7,6 +7,8 @@
 -- Blizzard's recipe row sets its name color in Init (when the row is built)
 -- and OnLeave (after the mouse-over highlight). ColorCraft repaints the name
 -- right after both, through secure hooks, so nothing of Blizzard's is replaced.
+-- The row's selected and hover highlights (gold in Blizzard's art) are tinted
+-- the same color, so the whole row reads orange / yellow / green / gray.
 -- No settings, no saved variables.
 
 local COLORS = {
@@ -36,21 +38,42 @@ local function listHasSkillUps()
 	return true
 end
 
+-- The highlights: Blizzard's gold art turned gray, then colored, so the tint is
+-- clean instead of gold-times-color. Rows are reused, so a row without a color
+-- gets Blizzard's gold back.
+local function tintHighlights(row, r, g, b)
+	for _, key in ipairs({ "SelectedOverlay", "HighlightOverlay" }) do
+		local tex = row[key]
+		if tex then
+			if r then
+				tex:SetDesaturated(true)
+				tex:SetVertexColor(r, g, b)
+			else
+				tex:SetDesaturated(false)
+				tex:SetVertexColor(1, 1, 1)
+			end
+		end
+	end
+end
+
 local function paint(row, node)
 	if not (row and row.Label) then return end
-	if row.IsMouseOver and row:IsMouseOver() then return end   -- keep Blizzard's white hover text
 	node = node or (row.GetElementData and row:GetElementData())
 	local data = node and (node.GetData and node:GetData() or node.data)
 	local info = data and data.recipeInfo
-	if not info then return end
-	if Professions and Professions.GetHighestLearnedRecipe then
+	if info and Professions and Professions.GetHighestLearnedRecipe then
 		info = Professions.GetHighestLearnedRecipe(info) or info
 	end
-	if not info.learned or info.disabled or not listHasSkillUps() then return end
+	if not info or not info.learned or info.disabled or not listHasSkillUps() then
+		tintHighlights(row)   -- no color for this row: Blizzard's gold
+		return
+	end
 	-- a learned recipe that can no longer raise the skill is gray, as in classic
 	local color = info.canSkillUp and COLORS[info.relativeDifficulty] or COLORS[3]
-	if not color then return end
+	if not color then tintHighlights(row) return end
 	local r, g, b = color:GetRGB()
+	tintHighlights(row, r, g, b)
+	if row.IsMouseOver and row:IsMouseOver() then return end   -- keep Blizzard's white hover text
 	row.Label:SetVertexColor(r, g, b)
 	if row.Count then row.Count:SetVertexColor(r, g, b) end
 end
